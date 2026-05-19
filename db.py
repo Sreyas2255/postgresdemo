@@ -21,3 +21,7 @@ def get_db_connection():
         except OperationalError as e:
             print(f"the error '{e}' occurred")
             return None
+        # finally:
+        #     if connection is not None:
+        #         connection.close()
+# conn = get_db_connection()                
