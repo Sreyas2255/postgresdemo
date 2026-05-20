@@ -11,8 +11,7 @@ def create_user_table():
             create_table_query = '''
             CREATE TABLE IF NOT EXISTS users (
                 id SERIAL PRIMARY KEY,
-                name VARCHAR(255) NOT NULL,
-                email VARCHAR(255) UNIQUE NOT NULL
+                name VARCHAR(255) NOT NULL
             );
             '''
             cursor.execute(create_table_query)
@@ -23,4 +22,4 @@ def create_user_table():
         finally:
             cursor.close()
             conn.close()
-create_user_table()                    
+# create_user_table()                    
